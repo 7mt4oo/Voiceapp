@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Voice</string>
+    <string name="hint">Tap on mic to start</string>
+
+</resources>
