@@ -138,9 +138,20 @@ public class MainActivity extends AppCompatActivity {
 
                         }
                         break;
+
                     }
+                    case "close": {
+
+                        Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+                        homeIntent.addCategory( Intent.CATEGORY_HOME );
+                        homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(homeIntent);
+
+                    }
+                        break;
+
                     default:
-                        Toast.makeText(MainActivity.this, "The application is not installed", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Not Found", Toast.LENGTH_LONG).show();
                         break;
                 }
             }
